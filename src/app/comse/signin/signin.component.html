@@ -1,0 +1,38 @@
+<nav style="background: white">
+    <button mat-stroked-button>product</button>
+    <button mat-stroked-button>suport</button>
+</nav>
+    
+    <div class="divcontener">
+        <h1>Sing in to your workspace</h1>
+        <h5>enterr your workspace <strong>.slack url</strong></h5>
+
+            <form [formGroup]= "signin" (ngSubmit)="onSubmit()">
+
+                <input type="text" formControlName = "username" ><label>.slack.com</label>
+                <!-- <app-validator [validator]="signin.controls.username"></app-validator> -->
+
+                <br><br>
+                <button type="submit" 
+                        [disabled]="signin.invalid" 
+                        class="btcontinu" 
+                        mat-raised-button 
+                        routerLink="pasword"
+                        >continu <span class="material-icons">
+                    trending_flat
+                    </span> </button>
+            </form>
+             
+        <br><br> 
+        <p>dont know your workspace URL? <a href="">find your workspace </a></p>  
+  
+    </div><br>
+
+    <div style="text-align: center">
+        Need to get your group started on Slack? <a routerLink="createworkspace">Create a new workspace</a> 
+    </div>
+
+
+
+
+   

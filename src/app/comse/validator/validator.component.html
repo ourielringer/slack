@@ -1,0 +1,5 @@
+
+<div *ngIf="validator.touched && validator.invalid"></div>
+    <div *ngFor ="let erorrKV of validator.errors | keyvalue" [ngSwitch]="erorrKV.key">
+        <span *ngSwitchCase="'required'">This is a required field</span>
+    </div>

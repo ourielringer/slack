@@ -1,0 +1,24 @@
+<body class="body">
+        <div class="divcontener">
+           
+            <h3>enterr your pasword </h3>
+    
+                <form [formGroup]= "signin" (ngSubmit)="onSubmit()">
+    
+                    <input type="text" formControlName = "pasword" >
+                    <app-validator [validator]="signin.controls.username"></app-validator>
+    
+                    <br><br>
+                    <button type="submit" 
+                            [disabled]="signin.invalid" 
+                            class="btcontinu" 
+                            mat-raised-button
+                            style="background: rgb(36, 114, 36)" >enter <span class="material-icons">
+                        trending_flat
+                        </span> </button>
+                </form>
+                
+            <br><br> 
+            <p>dont know your workspace URL? <a href="">find your workspace </a></p>  
+        </div> 
+    </body>

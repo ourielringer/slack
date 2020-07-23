@@ -1,0 +1,14 @@
+
+.divcontener{
+    border: 1px solid black;
+    width: 30%;
+    margin: auto;
+    margin-top: 200px;
+    background: white;
+    text-align:center;
+    padding: 20px;
+}
+.btcontinu{
+    width: 300px;
+    background: rgb(36, 114, 36)
+}
